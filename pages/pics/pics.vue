@@ -9,7 +9,7 @@
 		<!-- 二级图片列表展示区域 -->
 		<scroll-view class="pics-list"scroll-y>
 			<view class="item" v-for="item in picsList" :key="item.id">
-				<image :src="item.img_url"></image>
+				<image :src="item.img_url" @click="previewImg(item.img_url)"></image>
 				<text>{{item.zhaiyao}}</text>
 			</view>
 		</scroll-view>
@@ -48,6 +48,16 @@
 					title:'暂无数据'
 				})
 				this.picsList = res.data.message
+			},
+			// 预览图片
+			previewImg (current) {
+				const urls = this.picsList.map(item => {
+					return item.img_url
+				})
+				uni.previewImage({
+					urls,
+					current,
+				})
 			}
 		}
 	}

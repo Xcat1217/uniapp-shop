@@ -24,7 +24,7 @@
 		<view class="home-hot-goods">
 			<view class="tit">推 荐 商 品</view>
 			<!-- 商品列表组件 -->
-			<goods-list :goodsList="this.goodsList"></goods-list>
+			<goods-list :goodsList="goodsList"></goods-list>
 		</view>
 	</view>
 </template>

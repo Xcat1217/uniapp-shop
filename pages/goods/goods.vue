@@ -1,6 +1,6 @@
 <template>
 	<view class="goods-list">
-		<goods-list :goodsList="this.goodsList"></goods-list>
+		<goods-list :goodsList="goodsList"></goods-list>
 	</view>
 </template>
 

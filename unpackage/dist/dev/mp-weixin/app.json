@@ -8,7 +8,8 @@
     "pages/goods/goods",
     "pages/goods-detail/goods-detail",
     "pages/news/news",
-    "pages/member/member"
+    "pages/member/member",
+    "pages/videos/videos"
   ],
   "subPackages": [],
   "window": {
@@ -46,5 +47,6 @@
     ],
     "selectedColor": "#b50e03"
   },
-  "usingComponents": {}
+  "usingComponents": {},
+  "sitemapLocation": "sitemap24.json"
 }

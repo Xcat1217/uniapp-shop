@@ -24,47 +24,26 @@
 /* 垂直间距 */
 /* 透明度 */
 /* 文章场景相关 */
-.home-swiper swiper.data-v-57280228 {
-  width: 750rpx;
-  height: 380rpx;
+.contact {
+  font-size: 35rpx;
 }
-.home-swiper swiper image.data-v-57280228 {
-  height: 100%;
+.contact image {
   width: 100%;
+  height: 300rpx;
 }
-.home-nav.data-v-57280228 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: flex;
+.contact .contact-content {
+  padding: 0 20rpx;
 }
-.home-nav .nav-item.data-v-57280228 {
-  width: 25%;
-  text-align: center;
+.contact .contact-content .contact-tel {
+  width: 700rpx;
+  line-height: 80rpx;
 }
-.home-nav .nav-item view.data-v-57280228 {
-  width: 120rpx;
-  height: 120rpx;
-  background-color: #98F5FF;
-  border-radius: 50%;
-  margin: 10rpx auto;
-  line-height: 120rpx;
-  font-size: 60rpx;
-  color: #FFFFFF;
+.contact .contact-content .contact-address {
+  width: 700rpx;
+  line-height: 80rpx;
 }
-.home-nav .nav-item text.data-v-57280228 {
-  font-size: 30rpx;
-}
-.home-hot-goods.data-v-57280228 {
-  background-color: #eee;
-  overflow: hidden;
-}
-.home-hot-goods .tit.data-v-57280228 {
-  height: 100rpx;
-  font-size: 40rpx;
-  line-height: 100rpx;
-  text-align: center;
-  background-color: #fff;
-  letter-spacing: 15rpx;
-  margin: 7rpx 0;
+.contact .contact-content map {
+  width: 700rpx;
+  height: 700rpx;
 }
 

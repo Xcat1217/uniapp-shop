@@ -48,10 +48,6 @@
 				"navigationBarTitleText":"学习视频"
 			}
         }
-        ,{
-            "path" : "components/goods-list/goods-list",
-            "style" : {}
-        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",

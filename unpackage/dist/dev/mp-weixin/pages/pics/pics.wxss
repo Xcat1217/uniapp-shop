@@ -24,47 +24,47 @@
 /* 垂直间距 */
 /* 透明度 */
 /* 文章场景相关 */
-.home-swiper swiper.data-v-57280228 {
-  width: 750rpx;
-  height: 380rpx;
-}
-.home-swiper swiper image.data-v-57280228 {
+page {
   height: 100%;
-  width: 100%;
 }
-.home-nav.data-v-57280228 {
+.pics {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  height: 100%;
+}
+.pics .left {
+  width: 200rpx;
+  border-right: 2rpx solid #C0C0C0;
+  height: 100%;
+}
+.pics .left .left-item {
+  height: 120rpx;
+  line-height: 120rpx;
+  color: #333;
+  text-align: center;
+  font-size: 30rpx;
+  border-top: 2rpx solid #eee;
+}
+.pics .left .active {
+  background-color: #EE0000;
+  color: #FFFFFF;
+}
+.pics .pics-list {
+  width: 500rpx;
+  height: 100%;
+  margin: 10rpx auto;
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
 }
-.home-nav .nav-item.data-v-57280228 {
-  width: 25%;
-  text-align: center;
+.pics .pics-list .item image {
+  width: 500rpx;
+  height: 500rpx;
+  border-radius: 10rpx;
 }
-.home-nav .nav-item view.data-v-57280228 {
-  width: 120rpx;
-  height: 120rpx;
-  background-color: #98F5FF;
-  border-radius: 50%;
-  margin: 10rpx auto;
-  line-height: 120rpx;
-  font-size: 60rpx;
-  color: #FFFFFF;
-}
-.home-nav .nav-item text.data-v-57280228 {
+.pics .pics-list .item text {
   font-size: 30rpx;
-}
-.home-hot-goods.data-v-57280228 {
-  background-color: #eee;
-  overflow: hidden;
-}
-.home-hot-goods .tit.data-v-57280228 {
-  height: 100rpx;
-  font-size: 40rpx;
-  line-height: 100rpx;
-  text-align: center;
-  background-color: #fff;
-  letter-spacing: 15rpx;
-  margin: 7rpx 0;
+  line-height: 60rpx;
 }
 
