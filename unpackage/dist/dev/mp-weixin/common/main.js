@@ -15,6 +15,17 @@ var _js = __webpack_require__(/*! ./js */ 11);function _interopRequireDefault(ob
 _vue.default.prototype.$reqSwiper = _js.reqSwiper;
 _vue.default.prototype.$reqGoodsList = _js.reqGoodsList;
 _vue.default.prototype.$reqImgClass = _js.reqImgClass;
+_vue.default.prototype.$reqImgClass = _js.reqImgClass;
+_vue.default.prototype.$reqNews = _js.reqNews;
+
+// 全局时间过滤器
+_vue.default.filter('formatDate', function (date) {
+  var nDate = new Date(date);
+  var year = nDate.getFullYear();
+  var month = nDate.getMonth().toString().padStart(2, 0);
+  var day = nDate.getDay().toString().padStart(2, 0);
+  return "".concat(year, "\u5E74").concat(month, "\u6708").concat(day, "\u65E5");
+});
 
 _vue.default.config.productionTip = false;
 

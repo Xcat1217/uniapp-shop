@@ -1,6 +1,6 @@
 <template>
 	<view class="goods-list">
-		<goods-list :goodsList="goodsList"></goods-list>
+		<goods-list :goodsList="goodsList" @navGoodsDetail="navGoodsDetail"></goods-list>
 	</view>
 </template>
 
@@ -45,6 +45,12 @@
 				this.goodsList = [...this.goodsList, ...res.data.message]
 				// 关闭下拉刷新
 				callback && callback()
+			},
+			// 导航到商品详情页
+			navGoodsDetail (id) {
+				uni.navigateTo({
+					url: '../goods-detail/goods-detail?id=' + id
+				})
 			}
 		},
 		components: {

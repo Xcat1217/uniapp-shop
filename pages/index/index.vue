@@ -24,7 +24,7 @@
 		<view class="home-hot-goods">
 			<view class="tit">推 荐 商 品</view>
 			<!-- 商品列表组件 -->
-			<goods-list :goodsList="goodsList"></goods-list>
+			<goods-list :goodsList="goodsList" @navGoodsDetail="navGoodsDetail"></goods-list>
 		</view>
 	</view>
 </template>
@@ -74,6 +74,12 @@
 			navItemClick (url) {
 				uni.navigateTo({
 					url
+				})
+			},
+			// 导航到商品详情页
+			navGoodsDetail (id) {
+				uni.navigateTo({
+					url: '../goods-detail/goods-detail?id=' + id
 				})
 			}
 		},

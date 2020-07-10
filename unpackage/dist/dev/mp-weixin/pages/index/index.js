@@ -218,6 +218,12 @@ __webpack_require__.r(__webpack_exports__);
       uni.navigateTo({
         url: url });
 
+    },
+    // 导航到商品详情页
+    navGoodsDetail: function navGoodsDetail(id) {
+      uni.navigateTo({
+        url: '../goods-detail/goods-detail?id=' + id });
+
     } },
 
   components: {

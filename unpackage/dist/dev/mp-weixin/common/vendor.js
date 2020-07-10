@@ -7775,7 +7775,7 @@ function normalizeComponent (
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.reqImgClass = exports.reqGoodsList = exports.reqSwiper = void 0;
+Object.defineProperty(exports, "__esModule", { value: true });exports.reqNews = exports.reqImgClass = exports.reqGoodsList = exports.reqSwiper = void 0;
 var _ajax = __webpack_require__(/*! ./ajax.js */ 12); /* api函数模块 */
 // ****轮播图接口
 var reqSwiper = function reqSwiper() {return (0, _ajax.myRequest)({ url: '/api/getlunbo' });};
@@ -7788,8 +7788,9 @@ exports.reqSwiper = reqSwiper;var reqGoodsList = function reqGoodsList() {return
 exports.reqGoodsList = reqGoodsList;var reqImgClass = function reqImgClass() {return (0, _ajax.myRequest)({ url: '/api/getimgcategory' });};
 // 二级图片列表
 // 资讯列表
+exports.reqImgClass = reqImgClass;var reqNews = function reqNews() {return (0, _ajax.myRequest)({ url: '/api/getnewslist' });};
 // 资讯详情
-exports.reqImgClass = reqImgClass;
+exports.reqNews = reqNews;
 
 /***/ }),
 /* 12 */

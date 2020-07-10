@@ -42,7 +42,10 @@
 .icon-ziyuan:before {
   content: "\e60d";
 }
-
+.gomeImgLoad{
+	width: 700rpx;
+	height: auto;
+}
 
 
 

@@ -181,6 +181,12 @@ var _ajax = __webpack_require__(/*! ../../js/ajax.js */ 12);function _interopReq
                 _this2.goodsList = [].concat(_toConsumableArray(_this2.goodsList), _toConsumableArray(res.data.message));
                 // 关闭下拉刷新
                 callback && callback();case 5:case "end":return _context.stop();}}}, _callee);}))();
+    },
+    // 导航到商品详情页
+    navGoodsDetail: function navGoodsDetail(id) {
+      uni.navigateTo({
+        url: '../goods-detail/goods-detail?id=' + id });
+
     } },
 
   components: {

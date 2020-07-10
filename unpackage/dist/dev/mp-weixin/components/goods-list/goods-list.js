@@ -139,7 +139,10 @@ var _default =
 
 
   },
-  methods: {} };exports.default = _default;
+  methods: {
+    navGoodsDetail: function navGoodsDetail(id) {
+      this.$emit('navGoodsDetail', id);
+    } } };exports.default = _default;
 
 /***/ }),
 

@@ -1,7 +1,7 @@
 <template>
 	<!-- -***********商品列表组件 -->
 	<view class="home-goods-list">
-		<view class="home-goods-item" :key="item.id" v-for="item in goodsList">
+		<view class="home-goods-item" :key="item.id" v-for="item in goodsList" @click="navGoodsDetail(item.id)">
 			<image :src="item.img_url"></image>
 			<view class="goods-price">
 				<text class="new-price">￥{{item.sell_price}}</text>
@@ -24,7 +24,9 @@
 			}
 		},
 		methods: {
-
+			navGoodsDetail (id) {
+				this.$emit('navGoodsDetail', id)
+			}
 		}
 	}
 </script>
